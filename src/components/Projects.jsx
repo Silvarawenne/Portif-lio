@@ -9,14 +9,14 @@ import styles from './Projects.module.css';
 const projectsData = [
     {
         title: 'Landing Page Autoescola', // Título do Projeto
-        image: 'public/drivetech.png', // Link da imagem (ou coloque um arquivo na pasta public e use '/foto.jpg')
+        image: '/drivetech.png', // Link da imagem (ou coloque um arquivo na pasta public e use '/foto.jpg')
         description: 'Página web responsiva criada com React, Node.js e Bootstrap para um trabalho da faculdade.',
         demoUrl: 'https://drivetech-website.vercel.app/',  // Link para ver o site funcionando
         githubUrl: 'https://github.com/Silvarawenne/drivetech-website' // Link do GitHub
     },
     {
         title: 'HelpDesk Full-Stack',
-        image: 'public/image.png',
+        image: '/image.png',
         description: 'Sistema completo de chamados usando Angular no front-end e Java Spring Boot no back-end.',
         demoUrl: 'https://helpdeskprojectfrontend.vercel.app/login',
         githubUrl: 'https://github.com/Silvarawenne/helpdeskprojectfrontend'
