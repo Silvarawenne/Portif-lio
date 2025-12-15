@@ -1,0 +1,65 @@
+/* src/components/Hero.module.css */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-bottom: 1.5rem;
+}
+
+.headline {
+  font-size: 3.5rem;
+  font-weight: 700;
+  
+  /* Cor do título (branco, não totalmente) */
+  color: #ffffff; 
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.subheadline {
+  font-size: 1.25rem;
+  
+  /* Cor do sub-título (cinza claro) */
+  color: #b0b0b0; 
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- O NOVO BOTÃO --- */
+.ctaButton {
+  /* Estilo "Ghost Button" (Botão Fantasma) - super profissional */
+  background-color: transparent;
+  color: #ffffff; /* Texto branco */
+  border: 2px solid #ffffff; /* Borda branca */
+  
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 2.5rem; /* Mais espaço */
+  cursor: pointer;
+  
+  /* A mágica da transição */
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  /* Efeito de preenchimento no hover */
+  background-color: #ffffff;
+  color: #121212; /* Texto fica preto (cor do fundo) */
+}

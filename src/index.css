@@ -1,0 +1,17 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  
+  /* 1. Nosso fundo escuro */
+  background-color: #121212; 
+  
+  /* 2. Cor do texto padrão (claro) */
+  color: #e0e0e0; 
+
+  /* 3. Uma família de fontes mais limpa e moderna */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

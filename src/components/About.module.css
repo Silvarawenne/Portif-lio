@@ -1,0 +1,82 @@
+/* src/components/About.module.css */
+
+.aboutSection {
+  background-color: #1a1a1a;
+  padding: 80px 20px; /* Um pouco mais de respiro */
+  border-bottom: 1px solid #333; /* Linha sutil para separar das outras seções */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px; /* Mais espaço entre o texto e as skills */
+}
+
+/* Coluna da esquerda (texto) */
+.textColumn {
+  flex: 1; /* Divide o espaço igualmente */
+}
+
+/* Coluna da direita (skills) */
+.skillsColumn {
+  flex: 1; 
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  line-height: 1.8; /* Leitura mais confortável */
+}
+
+/* --- A MÁGICA DAS SKILLS --- */
+.skillsList {
+  list-style: none; /* Remove as bolinhas feias */
+  padding: 0;
+  margin: 0;
+  
+  /* Faz as skills ficarem lado a lado */
+  display: flex; 
+  flex-wrap: wrap; /* Se faltar espaço, joga pra linha de baixo */
+  gap: 12px; /* Espaço entre as pílulas */
+}
+
+.skillItem {
+  background-color: #2a2a2a; /* Um cinza um pouco mais claro que o fundo */
+  color: #e0e0e0;
+  padding: 10px 20px; /* Pílula mais gordinha */
+  border-radius: 50px; /* Bordas bem redondas */
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid #333; /* Borda sutil */
+  
+  /* Transição suave para o efeito */
+  transition: all 0.3s ease;
+  cursor: default; /* Mostra a seta normal do mouse */
+}
+
+/* Efeito ao passar o mouse */
+.skillItem:hover {
+  background-color: #007bff; /* Fica azul */
+  color: #ffffff;
+  border-color: #007bff;
+  transform: translateY(-3px); /* Sobe um pouquinho */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Brilho azul */
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
